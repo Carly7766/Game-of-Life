@@ -3,6 +3,14 @@ project(Game-of-Life)
 
 set(CMAKE_CXX_STANDARD 20)
 
+if(CMAKE_CXX_COMPILER_ID MATCHES "GNU")
+    add_compile_options(-Wall -Wextra -Wpedantic)
+elseif(CMAKE_CXX_COMPILER_ID MATCHES "MSVC")
+    add_compile_options(/W4)
+elseif(CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+    add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
+
 add_executable(${PROJECT_NAME})
 add_subdirectory(src)
 
