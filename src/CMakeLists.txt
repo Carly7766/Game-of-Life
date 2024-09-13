@@ -3,5 +3,5 @@ target_sources(
         ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/CellularAutomata/CellularAutomata.hpp
         ${CMAKE_CURRENT_SOURCE_DIR}/CellularAutomata/CellularAutomata.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/Vector2.hpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/CellularAutomata/Coordinate.hpp
 )

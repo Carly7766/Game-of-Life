@@ -10,7 +10,7 @@ void NextStep(int &currentStep, CellularAutomata &cellularAutomata) {
     std::string logString = std::string("Step: ") + std::to_string(currentStep) + "\n";
     for (int y = 0; y < CHUNK_SIZE; ++y) {
         for (int x = 0; x < CHUNK_SIZE; ++x) {
-            Vector2 cellPosition(x, y);
+            Coordinate cellPosition(x, y);
             if (cellularAutomata.getCell(cellPosition)) {
                 logString += "X";
             } else {
@@ -53,12 +53,12 @@ int main(int argc, char *argv[]) {
     // Initialize
     int step = 0;
     CellularAutomata cellularAutomata{};
-    cellularAutomata.generateChunk(Vector2{0, 0});
-    cellularAutomata.setCell(Vector2{7, 7}, true);
-    cellularAutomata.setCell(Vector2{6, 7}, true);
-    cellularAutomata.setCell(Vector2{8, 7}, true);
-    cellularAutomata.setCell(Vector2{7, 6}, true);
-    cellularAutomata.setCell(Vector2{7, 8}, true);
+    cellularAutomata.generateChunk(Coordinate{0, 0});
+    cellularAutomata.setCell(Coordinate{7, 7}, true);
+    cellularAutomata.setCell(Coordinate{6, 7}, true);
+    cellularAutomata.setCell(Coordinate{8, 7}, true);
+    cellularAutomata.setCell(Coordinate{7, 6}, true);
+    cellularAutomata.setCell(Coordinate{7, 8}, true);
 
     NextStep(step, cellularAutomata);
 
