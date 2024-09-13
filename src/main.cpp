@@ -1,10 +1,8 @@
 #include "./CellularAutomata/CellularAutomata.hpp"
+#include "Constants.hpp"
 #include <SDL2/SDL.h>
 #include <iostream>
 #include <string>
-
-const int SCREEN_WIDTH = 640;
-const int SCREEN_HEIGHT = 480;
 
 void NextStep(int &currentStep, CellularAutomata &cellularAutomata) {
     std::string logString = std::string("Step: ") + std::to_string(currentStep) + "\n";

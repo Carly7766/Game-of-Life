@@ -1,0 +1,11 @@
+#ifndef GAME_OF_LIFE_CONSTANTS_HPP
+#define GAME_OF_LIFE_CONSTANTS_HPP
+
+#include <SDL2/SDL.h>
+
+const Uint16 SCREEN_WIDTH = 640;
+const Uint16 SCREEN_HEIGHT = 480;
+
+const Uint8 CHUNK_SIZE = 16;
+
+#endif//GAME_OF_LIFE_CONSTANTS_HPP

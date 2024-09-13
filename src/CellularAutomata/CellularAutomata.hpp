@@ -1,10 +1,9 @@
 #ifndef GAME_OF_LIFE_CELLULARAUTOMATA_HPP
 #define GAME_OF_LIFE_CELLULARAUTOMATA_HPP
 
+#include "../Constants.hpp"
 #include "Coordinate.hpp"
 #include <unordered_map>
-
-const int CHUNK_SIZE = 16;
 
 class CellularAutomata {
 private:
