@@ -1,7 +1,7 @@
 #ifndef GAME_OF_LIFE_CONSTANTS_HPP
 #define GAME_OF_LIFE_CONSTANTS_HPP
 
-#include <SDL2/SDL.h>
+#include <SDL.h>
 
 const Uint16 SCREEN_WIDTH = 640;
 const Uint16 SCREEN_HEIGHT = 480;
